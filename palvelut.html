@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>KoriKunto Oy – Palvelut</title>
+  <meta name="description" content="KoriKunto Oy tarjoaa ammattitaitoisia siivous- ja remonttipalveluja pääkaupunkiseudulla.">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="nav-container">
+    <a href="index.html" class="logo-link">
+      <img src="images/corner.jpeg" alt="KoriKunto Oy" class="logo-img">
+    </a>
+    <nav class="nav">
+      <a href="index.html" class="nav-btn"><img src="images/etusivu.jpeg" alt="Etusivu"></a>
+      <a href="palvelut.html" class="nav-btn"><img src="images/palvelut.jpeg" alt="Palvelut"></a>
+      <a href="yhteystiedot.html" class="nav-btn"><img src="images/yhteystiedot.jpeg" alt="Yhteystiedot"></a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= SIIVOUSPALVELUT ================= -->
+<div class="bg-services-cleaning">
+  <section class="service-wide">
+    <h2 id="siivous-btn" class="clickable">🧹 Siivouspalvelut – Esimerkkihinnat ja kesto</h2>
+    <p class="service-price">Hinta: <strong>45 € / tunti</strong> <span class="alv-text">+ ALV 25,5%</span></p>
+    <p>Siivoukseen voi kuulua:</p>
+    <ul class="service-list">
+      <li>Imurointi ja lattioiden pesu</li>
+      <li>Pölyjen pyyhintä kaikilta saatavilta pinnoilta</li>
+      <li>Keittiön siivous (työpinnat, tiskiallas, liesi ulkopuolelta)</li>
+      <li>Ovien, kahvojen ja kytkimien pyyhintä</li>
+      <li>Peilien ja lasipintojen puhdistus</li>
+      <li>Roskien vienti</li>
+    </ul>
+    <p class="service-note">
+      Lisäpalveluna sopimuksen mukaan: ikkunoiden pesu, perusteellinen siivous,
+      muuton jälkeinen siivous tai remontin jälkeinen siivous.
+    </p>
+    <button class="open-modal-btn" data-modal="modal-siivous">📷 Katso kuvat</button>
+  </section>
+</div>
+
+<!-- ================= REMONTTI ================= -->
+<div class="bg-services-renovation">
+  <section class="service-wide">
+    <h2 id="remontti-btn" class="clickable">🧱 Remontti- ja asennuspalvelut – Esimerkkihinnat ja kesto</h2>
+    <div class="service-grid">
+      <div id="lattiatyot-btn" class="service-card clickable">
+        🧱 <strong class="remontti-text">Lattiatyöt</strong><br>
+        <span class="price">alkaen 25 € / m²</span>
+        <span class="alv-text">+ ALV 25,5%</span><br>
+        <small>Parketti, laminaatti, linoleumi, laatta</small>
+        <button class="open-modal-btn" data-modal="modal-lattiatyot">📷 Katso kuvat</button>
+      </div>
+
+      <div id="seinienmaalaus-btn" class="service-card clickable">
+        🎨 <strong class="remontti-text">Seinien maalaus</strong><br>
+        <span class="price">alkaen 25 € / m²</span>
+        <span class="alv-text">+ ALV 25,5%</span>
+        <button class="open-modal-btn" data-modal="modal-seinienmaalaus">📷 Katso kuvat</button>
+      </div>
+
+      <div id="keittiot-btn" class="service-card clickable">
+        🏠 <strong class="remontti-text">Keittiöiden ja kaappien asennus</strong><br>
+        <span class="price">alkaen 45 € / tunti</span>
+        <span class="alv-text">+ ALV 25,5%</span><br>
+        <small>Sisältää tarvittaessa sähkön ja putkiston siirrot</small>
+        <button class="open-modal-btn" data-modal="modal-keittiot">📷 Katso kuvat</button>
+      </div>
+
+      <div id="tavaran-btn" class="service-card clickable">
+        🚚 <strong class="remontti-text">Tavaran toimitus kotiin</strong><br>
+        <span class="price">alkaen 50 €</span>
+        <span class="alv-text">+ ALV 25,5%</span>
+        <button class="open-modal-btn" data-modal="modal-tavaran">📷 Katso kuvat</button>
+      </div>
+    </div>
+
+    <p class="service-note">
+      Huom: Hintoihin sisältyy minimaalisten materiaalien käyttö.
+      Hinta voi muuttua riippuen toiveistanne ja lisäpalveluista.
+    </p>
+  </section>
+
+  <!-- ================= MATKAKULUT ================= -->
+  <section class="service-wide">
+    <h2 id="matkakulut-btn" class="clickable">🚗 Matkakulut</h2>
+    <p>→ Pääkaupunkiseudulla (Helsinki, Vantaa, Espoo) — <strong>15 € / matka</strong></p>
+    <p>→ Kaikissa kohteissa pääkaupunkiseudun ulkopuolella 80 km säteellä Helsingistä — <strong>30 € / matka</strong></p>
+  </section>
+
+  <!-- CTA Button -->
+  <section class="section cta-section">
+    <a href="mailto:korikunto@gmail.com" class="btn-primary">📩 Pyydä tarjous</a>
+  </section>
+</div>
+
+<!-- ================= MIKSI VALITA & FAQ ================= -->
+<div class="bg-services-faq">
+  <section class="section">
+    <h2>🌟 Miksi valita KoriKunto?</h2>
+    <ul class="check-list">
+      <li> Ammattitaitoinen ja luotettava tiimi</li>
+      <li> Laadukkaat ja ympäristöystävälliset puhdistusaineet</li>
+      <li> Nopea vasteaika tarjouspyynnöille</li>
+      <li> Selkeä hinnoittelu ilman piilokuluja</li>
+      <li> Yksilöllinen lähestymistapa jokaiseen kohteeseen</li>
+    </ul>
+  </section>
+
+  <!-- FAQ -->
+  <div class="faq-item">
+    <h2>❓ Usein kysytyt kysymykset</h2>
+    <div class="faq-question">
+      <span class="faq-text">🧹 Sisältääkö hinta siivousvälineet?</span>
+      <span class="arrow">→</span>
+      <span class="faq-answer-inline">Kyllä, kaikki tarvittavat välineet ja puhdistusaineet sisältyvät hintaan.</span>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <span class="faq-text">🚗 Mitä matkakulut maksavat?</span>
+      <span class="arrow">→</span>
+      <span class="faq-answer-inline">15 € päivässä pääkaupunkiseudulla (Helsinki, Espoo, Vantaa). Jos kohde on kauempana, matkakulut 30 €.</span>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <span class="faq-text">💰 Voinko saada kotitalousvähennystä?</span>
+      <span class="arrow">→</span>
+      <span class="faq-answer-inline">Kyllä, osa palvelun hinnasta voidaan vähentää kotitalousvähennyksenä jopa 60% (2250€ / vuosi per henkilö).</span>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <span class="faq-text">🕒 Kuinka nopeasti voitte aloittaa?</span>
+      <span class="arrow">→</span>
+      <span class="faq-answer-inline">Yleensä pystymme aloittamaan 1–3 päivän sisällä varauksesta.</span>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <span class="faq-text">📆 Voinko sopia säännöllisen siivouksen?</span>
+      <span class="arrow">→</span>
+      <span class="faq-answer-inline">Kyllä, voimme sopia viikoittaisista tai kuukausittaisista siivouskerroista.</span>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <span class="faq-text">🏠 Palveletteko koko pääkaupunkiseutua?</span>
+      <span class="arrow">→</span>
+      <span class="faq-answer-inline">Kyllä, pääkaupunkiseudulla sekä noin 80 km säteellä Helsingistä.</span>
+    </div>
+  </div>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container footer-container">
+    <div class="logo">KoriKunto Oy</div>
+    <div class="contact">
+      <div><i>📞</i> 040 867 6722</div>
+      <div><i>✉️</i> korikunto@gmail.com</div>
+      <div><i>🏢</i> Y-tunnus 3477450-6</div>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= MODALS ================= -->
+<div id="modal-siivous" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal-images">
+      <img src="images/siivous1.jpg" alt="">
+      <img src="images/siivous2.jpg" alt="">
+      <img src="images/siivous3.jpg" alt="">
+      <img src="images/siivous4.jpg" alt="">
+      <img src="images/siivous5.jpg" alt="">
+      <img src="images/siivous6.jpg" alt="">
+    </div>
+  </div>
+</div>
+
+<div id="modal-lattiatyot" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal-images">
+      <img src="images/lattiatyot1.jpg" alt="">
+      <img src="images/lattiatyot2.jpg" alt="">
+      <img src="images/lattiatyot3.jpg" alt="">
+      <img src="images/lattiatyot4.jpg" alt="">
+      <img src="images/lattiatyot5.jpg" alt="">
+      <img src="images/lattiatyot6.jpg" alt="">
+    </div>
+  </div>
+</div>
+
+<div id="modal-seinienmaalaus" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal-images">
+      <img src="images/seinienmaalaus1.jpg" alt="">
+      <img src="images/seinienmaalaus2.jpg" alt="">
+      <img src="images/seinienmaalaus3.jpg" alt="">
+      <img src="images/seinienmaalaus4.jpg" alt="">
+      <img src="images/seinienmaalaus5.jpg" alt="">
+      <img src="images/seinienmaalaus6.jpg" alt="">
+    </div>
+  </div>
+</div>
+
+<div id="modal-keittiot" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal-images">
+      <img src="images/keittiot.jpeg" alt="">
+    </div>
+  </div>
+</div>
+
+<div id="modal-tavaran" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal-images">
+      <img src="images/tavaran1.jpg" alt="">
+      <img src="images/tavaran2.jpg" alt="">
+      <img src="images/tavaran3.jpg" alt="">
+      <img src="images/tavaran4.jpg" alt="">
+      <img src="images/tavaran5.jpg" alt="">
+      <img src="images/tavaran6.jpg" alt="">
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
