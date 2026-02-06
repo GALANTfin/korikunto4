@@ -1973,3 +1973,8 @@ button:hover,
 .matkakulut-text {
   color:#ffffff
 }
+
+li span {
+  color: #000 !important;       /* черный цвет */
+  font-size: 1em !important;    /* размер как у li */
+}
