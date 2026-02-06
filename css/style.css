@@ -1840,55 +1840,6 @@ nav a::after {
   box-shadow: 0 3px 8px rgba(0,0,0,0.2);
 }
 
-/* Модальное окно */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background: rgba(0, 0, 0, 0.7); /* размытый фон */
-}
-
-.modal-content {
-  background-color: #fff;
-  margin: 50px auto;
-  padding: 20px;
-  border-radius: 12px;
-  width: 90%;
-  max-width: 800px;
-  position: relative;
-}
-
-.modal-content .close {
-  position: absolute;
-  top: 10px;
-  right: 16px;
-  font-size: 28px;
-  font-weight: bold;
-  color: #333;
-  cursor: pointer;
-}
-
-.modal-images {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 фото в ряд */
-  gap: 12px;
-}
-
-.modal-images img {
-  width: 100%;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.modal-images img:hover {
-  transform: scale(1.05);
-}
 
 /* Для адаптива на мобильных */
 @media (max-width: 600px) {
@@ -1897,4 +1848,129 @@ nav a::after {
   }
 }
 
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content--image {
+  width: 80%;
+  height: 80%;
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-images--full {
+  flex: 1;
+  width: 90%;
+}
+
+.modal-images--full img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain; /* ВСЁ фото видно */
+  border-radius: 12px;
+}
+
+:root {
+  --bg-dark: #0f1115;
+  --bg-card: #1a1d23;
+  --text-main: #eaeaea;
+  --text-muted: #b5b5b5;
+  --accent: #ff5a1f;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  line-height: 1.65;
+  font-size: 16px;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.6em;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+p, li {
+  color: var(--text-muted);
+  font-size: 17px;
+  max-width: 720px;
+}
+
+.service-card,
+.card,
+.block {
+  background: var(--bg-card);
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+button,
+.btn {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 14px 26px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+button:hover,
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(255,90,31,0.3);
+}
+
+.close {
+  font-size: 32px;
+  color: #fff;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.close:hover {
+  opacity: 0.6;
+}
+
+.main-text {
+  text-align: right;
+  font-size: 18px;
+}
+
+.main-text {
+  max-width: 600px;
+  margin-left: auto;
+}
 
