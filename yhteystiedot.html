@@ -55,6 +55,37 @@
   </div>
 </section>
 
+<section class="section contact-form-section">
+  <h2 class="section-title-center" data-i18n="contact_form_title">Pyydä tarjous</h2>
+  <form class="contact-form" action="mailto:korikunto@gmail.com" method="post" enctype="text/plain">
+    <div class="form-group">
+      <label for="contact-name" data-i18n="contact_form_name_label">Nimi</label>
+      <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Nimesi" data-i18n="contact_form_name_placeholder" data-i18n-attr="placeholder" required>
+    </div>
+    <div class="form-group">
+      <label for="contact-phone" data-i18n="contact_form_phone_label">Puhelin</label>
+      <input id="contact-phone" name="phone" type="tel" autocomplete="tel" placeholder="Puhelinnumerosi" data-i18n="contact_form_phone_placeholder" data-i18n-attr="placeholder" required>
+    </div>
+    <div class="form-group">
+      <label for="contact-email" data-i18n="contact_form_email_label">Sähköposti</label>
+      <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="Sähköpostisi" data-i18n="contact_form_email_placeholder" data-i18n-attr="placeholder">
+    </div>
+    <div class="form-group">
+      <label for="contact-service" data-i18n="contact_form_service_label">Palvelu</label>
+      <select id="contact-service" name="service" required>
+        <option value="" data-i18n="contact_form_service_placeholder">Valitse palvelu</option>
+        <option value="cleaning" data-i18n="contact_form_service_cleaning">Siivous</option>
+        <option value="renovation" data-i18n="contact_form_service_renovation">Remontti / asennus</option>
+        <option value="other" data-i18n="contact_form_service_other">Muu</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="contact-message" data-i18n="contact_form_message_label">Viesti</label>
+      <textarea id="contact-message" name="message" rows="5" placeholder="Kuvaile tarpeesi" data-i18n="contact_form_message_placeholder" data-i18n-attr="placeholder" required></textarea>
+    </div>
+    <button class="btn-primary" type="submit" data-i18n="contact_form_submit">Lähetä</button>
+  </form>
+</section>
 
 
 <section class="section">
