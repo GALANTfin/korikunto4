@@ -1978,3 +1978,10 @@ li span {
   color: #000 !important;       /* черный цвет */
   font-size: 1em !important;    /* размер как у li */
 }
+
+@media (max-width: 768px) {
+  .main-text {
+    margin-left: 0;
+    text-align: left;
+  }
+}
