@@ -2,8 +2,8 @@
 <html lang="fi">
 <head>
   <meta charset="UTF-8">
-  <title>KoriKunto Oy – Yhteystiedot</title>
-  <meta name="description" content="Ota yhteyttä KoriKunto Oy:öön siivous- ja remonttipalveluista.">
+  <title data-i18n="title_contact">KoriKunto Oy – Yhteystiedot</title>
+  <meta name="description" data-i18n="meta_description_contact" data-i18n-attr="content" content="Ota yhteyttä KoriKunto Oy:öön siivous- ja remonttipalveluista.">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
@@ -14,23 +14,28 @@
 
 <header>
   <div class="nav-container">
-    
-    <!-- LOGO BUTTON -->
+        <!-- LOGO BUTTON -->
     <a href="index.html" class="logo-link">
       <img src="images/corner.jpeg" alt="KoriKunto Oy" class="logo-img">
     </a>
-
-    <nav class="nav">
-      <a href="index.html" class="nav-btn">
-        <img src="images/etusivu.jpeg" alt="Etusivu">
-      </a>
-      <a href="palvelut.html" class="nav-btn">
-        <img src="images/palvelut.jpeg" alt="Palvelut">
-      </a>
-      <a href="yhteystiedot.html" class="nav-btn">
-        <img src="images/yhteystiedot.jpeg" alt="Yhteystiedot">
-      </a>
-    </nav>
+    <div class="nav-actions">
+      <nav class="nav">
+        <a href="index.html" class="nav-btn">
+          <img src="images/etusivu.jpeg" alt="Etusivu" data-i18n="nav_home_alt" data-i18n-attr="alt">
+        </a>
+        <a href="palvelut.html" class="nav-btn">
+          <img src="images/palvelut.jpeg" alt="Palvelut" data-i18n="nav_services_alt" data-i18n-attr="alt">
+        </a>
+        <a href="yhteystiedot.html" class="nav-btn">
+          <img src="images/yhteystiedot.jpeg" alt="Yhteystiedot" data-i18n="nav_contact_alt" data-i18n-attr="alt">
+        </a>
+      </nav>
+      <div class="language-switcher" role="group" aria-label="Language switcher">
+        <button class="language-switcher__btn" type="button" data-lang="fi">FI</button>
+        <button class="language-switcher__btn" type="button" data-lang="en">EN</button>
+        <button class="language-switcher__btn" type="button" data-lang="ru">RU</button>
+      </div>
+    </div>
 
   </div>
 </header>
@@ -41,40 +46,40 @@
   <!-- Ota yhteyttä -->
 
 <section class="section">
-  <h2 class="section-title-center">Ota yhteyttä</h2>
+  <h2 class="section-title-center" data-i18n="contact_title">Ota yhteyttä</h2>
 
   <div class="contact-buttons">
-    <a href="tel:0408676722" class="contact-btn">📞 040 867 6722</a>
-    <a href="mailto:korikunto@gmail.com" class="contact-btn">✉️ korikunto@gmail.com</a>
-    <a href="https://www.google.com/maps/search/?api=1&query=Tillinm%C3%A4entie+3+B117,+02330+Espoo" target="_blank" class="contact-btn">📍 Tillinmäentie 3 B117, 02330 Espoo</a>
+      <a href="tel:0408676722" class="contact-btn" data-i18n="contact_phone">📞 040 867 6722</a>
+    <a href="mailto:korikunto@gmail.com" class="contact-btn" data-i18n="contact_email">✉️ korikunto@gmail.com</a>
+    <a href="https://www.google.com/maps/search/?api=1&query=Tillinm%C3%A4entie+3+B117,+02330+Espoo" target="_blank" class="contact-btn" data-i18n="contact_address">📍 Tillinmäentie 3 B117, 02330 Espoo</a>
   </div>
 </section>
 
 
 
 <section class="section">
-  <h2 class="section-title-center">Arvostelut ja palautet</h2>
+  <h2 class="section-title-center" data-i18n="reviews_title">Arvostelut ja palautet</h2>
 
   <div class="reviews-container">
     <!-- Первый отзыв -->
     <div class="review-block">
       <p class="review-stars">⭐⭐⭐⭐⭐</p>
-      <p class="review-text">Siivous tehtiin huolellisesti ja ajallaan. Erittäin tyytyväinen lopputulokseen.</p>
-      <p class="review-author">Anna M.</p>
+      <p class="review-text" data-i18n="review_1_text">Siivous tehtiin huolellisesti ja ajallaan. Erittäin tyytyväinen lopputulokseen.</p>
+      <p class="review-author" data-i18n="review_1_author">Anna M.</p>
     </div>
 
     <!-- Второй отзыв -->
     <div class="review-block">
       <p class="review-stars">⭐⭐⭐⭐⭐</p>
-      <p class="review-text">Keittiöiden kokoaminen suoritettiin nopeasti ja tarkasti. Lopputulos vastasi täysin odotuksia.</p>
-      <p class="review-author">Jukka L.</p>
+      <p class="review-text" data-i18n="review_2_text">Keittiöiden kokoaminen suoritettiin nopeasti ja tarkasti. Lopputulos vastasi täysin odotuksia.</p>
+      <p class="review-author" data-i18n="review_2_author">Jukka L.</p>
     </div>
   </div>
 </section>
 
 <!-- ===== MAP ===== -->
 <section class="section">
-  <h2 class="section-title-center">Sijaintimme</h2>
+  <h2 class="section-title-center" data-i18n="location_title">Sijaintimme</h2>
   <div class="map-container">
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.548491671383!2d24.60198391608852!3d60.19917598184908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920b2618d3a1ab%3A0x63d70b720ff0b948!2sTillinm%C3%A4entie%203%2C%2002330%20Espoo!5e0!3m2!1sfi!2sfi!4v1700000000000!5m2!1sfi!2sfi"
@@ -95,14 +100,15 @@
 <!-- ===== FOOTER ===== -->
 <footer>
   <div class="container footer-container">
-    <div class="logo">KoriKunto Oy</div>
+    <div class="logo" data-i18n="footer_company">KoriKunto Oy</div>
     <div class="contact">
-      <div><i>📞</i> 040 867 6722</div>
-      <div><i>✉️</i> korikunto@gmail.com</div>
-      <div><i>🏢</i> Y-tunnus 3477450-6</div>
+      <div data-i18n="footer_phone"><i>📞</i> 040 867 6722</div>
+      <div data-i18n="footer_email"><i>✉️</i> korikunto@gmail.com</div>
+      <div data-i18n="footer_company_id"><i>🏢</i> Y-tunnus 3477450-6</div>
     </div>
   </div>
 </footer>
+  <script src="js/i18n.js"></script>
 
 </body>
 </html>
