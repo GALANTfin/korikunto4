@@ -2,14 +2,13 @@
 <html lang="fi">
 <head>
   <meta charset="UTF-8">
-  <title>KoriKunto Oy – Palvelut</title>
-  <meta name="description" content="KoriKunto Oy tarjoaa ammattitaitoisia siivous- ja remonttipalveluja pääkaupunkiseudulla.">
+  <title data-i18n="title_home">KoriKunto Oy – Etusivu</title>
+  <meta name="description" data-i18n="meta_description_home" data-i18n-attr="content" content="KoriKunto Oy tarjoaa ammattitaitoisia siivous- ja remonttipalveluja pääkaupunkiseudulla.">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
 
@@ -22,17 +21,24 @@
       <img src="images/corner.jpeg" alt="KoriKunto Oy" class="logo-img">
     </a>
 
-    <nav class="nav">
-      <a href="index.html" class="nav-btn">
-        <img src="images/etusivu.jpeg" alt="Etusivu">
-      </a>
-      <a href="palvelut.html" class="nav-btn">
-        <img src="images/palvelut.jpeg" alt="Palvelut">
-      </a>
-      <a href="yhteystiedot.html" class="nav-btn">
-        <img src="images/yhteystiedot.jpeg" alt="Yhteystiedot">
-      </a>
-    </nav>
+        <div class="nav-actions">
+      <nav class="nav">
+        <a href="index.html" class="nav-btn">
+          <img src="images/etusivu.jpeg" alt="Etusivu" data-i18n="nav_home_alt" data-i18n-attr="alt">
+        </a>
+        <a href="palvelut.html" class="nav-btn">
+          <img src="images/palvelut.jpeg" alt="Palvelut" data-i18n="nav_services_alt" data-i18n-attr="alt">
+        </a>
+        <a href="yhteystiedot.html" class="nav-btn">
+          <img src="images/yhteystiedot.jpeg" alt="Yhteystiedot" data-i18n="nav_contact_alt" data-i18n-attr="alt">
+        </a>
+      </nav>
+      <div class="language-switcher" role="group" aria-label="Language switcher">
+        <button class="language-switcher__btn" type="button" data-lang="fi">FI</button>
+        <button class="language-switcher__btn" type="button" data-lang="en">EN</button>
+        <button class="language-switcher__btn" type="button" data-lang="ru">RU</button>
+      </div>
+    </div>
 
   </div>
 </header>
@@ -43,18 +49,18 @@
 <section class="section section-intro-bg">
   <div class="container split">
     <div class="text">
-      <h2 class="main-heading">Tarjoamme ammattitaitoista siivous- ja remonttipalvelua</h2>
-      <p class="main-text">
+      <h2 class="main-heading" data-i18n="hero_heading">Tarjoamme ammattitaitoista siivous- ja remonttipalvelua</h2>
+      <p class="main-text" data-i18n="hero_text_1">
         KoriKunto Oy tarjoaa laadukkaita ja luotettavia
-        siivous- ja remonttipalveluita koteihin ja yrityksille<br>
+        siivous- ja remonttipalveluita koteihin ja yrityksille
         pääkaupunkiseudulla sekä noin 80 km säteellä Helsingistä.
       </p>
-      <p class="main-text">
+      <p class="main-text" data-i18n="hero_text_2">
         Huolehdimme jokaisesta yksityiskohdasta ja
         käytämme omia työvälineitä sekä
         ympäristöystävällisiä puhdistusaineita.
       </p>
-      <a href="yhteystiedot.html" class="btn-primary">
+       <a href="yhteystiedot.html" class="btn-primary" data-i18n="hero_cta">
         Pyydä tarjous
       </a>
     </div>
@@ -68,34 +74,34 @@
   <!-- 2 абзац -->
   <div class="two-columns">
     <div class="column">
-      <h2 class="main-heading">Siivouspalvelut</h2>
+      <h2 class="main-heading" data-i18n="services_cleaning_heading">Siivouspalvelut</h2>
       <ul class="check-list">
-        <li>✅Toimistojen ja liiketilojen siivous</li>
-        <li>✅Rappusiivous</li>
-        <li>✅Muuttosiivous</li>
-        <li>✅Ikkunanpesu <span>(sisältä ja ulkoa)</span></li>
+        <li data-i18n="services_cleaning_item_1">✅Toimistojen ja liiketilojen siivous</li>
+        <li data-i18n="services_cleaning_item_2">✅Rappusiivous</li>
+        <li data-i18n="services_cleaning_item_3">✅Muuttosiivous</li>
+        <li data-i18n="services_cleaning_item_4">✅Ikkunanpesu (sisältä ja ulkoa)</li>
       </ul>
     </div>
 
     <div class="column">
-      <h2 class="main-heading">Remontti- ja asennuspalvelut</h2>
+      <h2 class="main-heading" data-i18n="services_renovation_heading">Remontti- ja asennuspalvelut</h2>
       <ul class="check-list">
-        <li>✅Pienet remonttityöt</li>
-        <li>✅Kalusteiden asennus</li>
-        <li>✅Seinien ja lattioiden korjaus</li>
-        <li>✅Viimeistelytyöt <span>(nopea ja siisti)</span></li>
+        <li data-i18n="services_renovation_item_1">✅Pienet remonttityöt</li>
+        <li data-i18n="services_renovation_item_2">✅Kalusteiden asennus</li>
+        <li data-i18n="services_renovation_item_3">✅Seinien ja lattioiden korjaus</li>
+        <li data-i18n="services_renovation_item_4">✅Viimeistelytyöt (nopea ja siisti)</li>
       </ul>
     </div>
   </div>
 
   <!-- 3 абзац -->
   <div class="why-us">
-    <h2 class="main-heading">Miksi valita KoriKunto?</h2>
+    <h2 class="main-heading" data-i18n="why_heading">Miksi valita KoriKunto?</h2>
     <ul class="check-list">
-      <li>✅Kokenut ja ammattitaitoinen tiimi</li>
-      <li>✅Luotettava ja aikatauluja noudattava palvelu</li>
-      <li>✅Selkeä hinnoittelu ilman piilokuluja</li>
-      <li>✅Yksilöllinen lähestymistapa jokaiseen kohteeseen</li>
+      <li data-i18n="why_item_1">✅Kokenut ja ammattitaitoinen tiimi</li>
+      <li data-i18n="why_item_2">✅Luotettava ja aikatauluja noudattava palvelu</li>
+      <li data-i18n="why_item_3">✅Selkeä hinnoittelu ilman piilokuluja</li>
+      <li data-i18n="why_item_4">✅Yksilöllinen lähestymistapa jokaiseen kohteeseen</li>
     </ul>
   </div>
 
@@ -103,25 +109,25 @@
 
 <!-- 4 абзац — ОТДЕЛЬНЫЙ ФОН -->
 <section class="section section-cta">
-  <h2 class="main-heading">Luotettava kumppani arjen ja remontin tarpeisiin</h2>
-  <p class="main-text">
+  <h2 class="main-heading" data-i18n="cta_heading">Luotettava kumppani arjen ja remontin tarpeisiin</h2>
+  <p class="main-text" data-i18n="cta_text">
     Olipa kyse säännöllisestä siivouksesta tai pienremontista, KORIKUNTO OY on turvallinen valinta. Palvelemme yksityisasiakkaita ja yrityksiä Espoossa, Helsingissä ja Vantaalla sekä noin 80 km säteellä Helsingistä. Tarjoamme joustavia aikatauluja, räätälöimme palvelut asiakkaan tarpeiden mukaan ja käytämme ympäristöystävällisiä työvälineitä. Kaikki työntekijämme ovat koulutettuja ja luotettavia, joten voit luottaa palveluumme.
   </p>
-  <a href="yhteystiedot.html" class="btn-primary">Ota yhteyttä</a>
+  <a href="yhteystiedot.html" class="btn-primary" data-i18n="cta_button">Ota yhteyttä</a>
 </section>
 </main>
 
 <!-- ===== FOOTER ===== -->
 <footer>
   <div class="container footer-container">
-    <div class="logo">KoriKunto Oy</div>
+    <div class="logo" data-i18n="footer_company">KoriKunto Oy</div>
     <div class="contact">
-      <div><i>📞</i> 040 867 6722</div>
-      <div><i>✉️</i> korikunto@gmail.com</div>
-      <div><i>🏢</i> Y-tunnus 3477450-6</div>
+      <div data-i18n="footer_phone"><i>📞</i> 040 867 6722</div>
+      <div data-i18n="footer_email"><i>✉️</i> korikunto@gmail.com</div>
+      <div data-i18n="footer_company_id"><i>🏢</i> Y-tunnus 3477450-6</div>
     </div>
   </div>
 </footer>
-
+  <script src="js/i18n.js"></script>
 </body>
 </html>
