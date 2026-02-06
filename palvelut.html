@@ -2,14 +2,13 @@
 <html lang="fi">
 <head>
   <meta charset="UTF-8">
-  <title>KoriKunto Oy – Palvelut</title>
-  <meta name="description" content="KoriKunto Oy tarjoaa ammattitaitoisia siivous- ja remonttipalveluja pääkaupunkiseudulla.">
+  <title data-i18n="title_services">KoriKunto Oy – Palvelut</title>
+  <meta name="description" data-i18n="meta_description_services" data-i18n-attr="content" content="KoriKunto Oy tarjoaa ammattitaitoisia siivous- ja remonttipalveluja pääkaupunkiseudulla.">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
@@ -20,11 +19,18 @@
     <a href="index.html" class="logo-link">
       <img src="images/corner.jpeg" alt="KoriKunto Oy" class="logo-img">
     </a>
-    <nav class="nav">
-      <a href="index.html" class="nav-btn"><img src="images/etusivu.jpeg" alt="Etusivu"></a>
-      <a href="palvelut.html" class="nav-btn"><img src="images/palvelut.jpeg" alt="Palvelut"></a>
-      <a href="yhteystiedot.html" class="nav-btn"><img src="images/yhteystiedot.jpeg" alt="Yhteystiedot"></a>
-    </nav>
+    <div class="nav-actions">
+      <nav class="nav">
+        <a href="index.html" class="nav-btn"><img src="images/etusivu.jpeg" alt="Etusivu" data-i18n="nav_home_alt" data-i18n-attr="alt"></a>
+        <a href="palvelut.html" class="nav-btn"><img src="images/palvelut.jpeg" alt="Palvelut" data-i18n="nav_services_alt" data-i18n-attr="alt"></a>
+        <a href="yhteystiedot.html" class="nav-btn"><img src="images/yhteystiedot.jpeg" alt="Yhteystiedot" data-i18n="nav_contact_alt" data-i18n-attr="alt"></a>
+      </nav>
+      <div class="language-switcher" role="group" aria-label="Language switcher">
+        <button class="language-switcher__btn" type="button" data-lang="fi">FI</button>
+        <button class="language-switcher__btn" type="button" data-lang="en">EN</button>
+        <button class="language-switcher__btn" type="button" data-lang="ru">RU</button>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -33,155 +39,156 @@
 <!-- ================= SIIVOUSPALVELUT ================= -->
 <div class="bg-services-cleaning">
   <section class="service-wide">
-    <h2 id="siivous-btn" class="clickable">🧹 Siivouspalvelut – Esimerkkihinnat ja kesto</h2>
-    <p class="service-price">Hinta: <strong>45 € / tunti</strong> <span class="alv-text">+ ALV 25,5%</span></p>
-    <p>Siivoukseen voi kuulua:</p>
+    <h2 id="siivous-btn" class="clickable" data-i18n="services_cleaning_title">🧹 Siivouspalvelut – Esimerkkihinnat ja kesto</h2>
+    <p class="service-price" data-i18n-html="services_cleaning_price">Hinta: <strong>45 € / tunti</strong> <span class="alv-text">+ ALV 25,5%</span></p>
+    <p data-i18n="services_cleaning_intro">Siivoukseen voi kuulua:</p>
     <ul class="service-list">
-      <li>Imurointi ja lattioiden pesu</li>
-      <li>Pölyjen pyyhintä kaikilta saatavilta pinnoilta</li>
-      <li>Keittiön siivous (työpinnat, tiskiallas, liesi ulkopuolelta)</li>
-      <li>Ovien, kahvojen ja kytkimien pyyhintä</li>
-      <li>Peilien ja lasipintojen puhdistus</li>
-      <li>Roskien vienti</li>
+      <li data-i18n="services_cleaning_list_1">Imurointi ja lattioiden pesu</li>
+      <li data-i18n="services_cleaning_list_2">Pölyjen pyyhintä kaikilta saatavilta pinnoilta</li>
+      <li data-i18n="services_cleaning_list_3">Keittiön siivous (työpinnat, tiskiallas, liesi ulkopuolelta)</li>
+      <li data-i18n="services_cleaning_list_4">Ovien, kahvojen ja kytkimien pyyhintä</li>
+      <li data-i18n="services_cleaning_list_5">Peilien ja lasipintojen puhdistus</li>
+      <li data-i18n="services_cleaning_list_6">Roskien vienti</li>
     </ul>
-    <p class="service-note">
+    <p class="service-note" data-i18n="services_cleaning_note">
       Lisäpalveluna sopimuksen mukaan: ikkunoiden pesu, perusteellinen siivous,
       muuton jälkeinen siivous tai remontin jälkeinen siivous.
     </p>
-    <button class="open-modal-btn" data-modal="modal-siivous">📷 Katso kuvat</button>
+    <button class="open-modal-btn" data-modal="modal-siivous" data-i18n="see_photos">📷 Katso kuvat</button>
   </section>
 </div>
 
 <!-- ================= REMONTTI ================= -->
 <div class="bg-services-renovation">
   <section class="service-wide">
-    <h2 id="remontti-btn" class="clickable">🧱 Remontti- ja asennuspalvelut – Esimerkkihinnat ja kesto</h2>
+    <h2 id="remontti-btn" class="clickable" data-i18n="services_renovation_title">🧱 Remontti- ja asennuspalvelut – Esimerkkihinnat ja kesto</h2>
     <div class="service-grid">
       <div id="lattiatyot-btn" class="service-card clickable">
-        🧱 <strong class="remontti-text">Lattiatyöt</strong><br>
-        <span class="price">alkaen 25 € / m²</span>
-        <span class="alv-text">+ ALV 25,5%</span><br>
-        <small>Parketti, laminaatti, linoleumi, laatta</small>
-        <button class="open-modal-btn" data-modal="modal-lattiatyot">📷 Katso kuvat</button>
+        🧱 <strong class="remontti-text" data-i18n="renovation_floor_title">Lattiatyöt</strong><br>
+        <span class="price" data-i18n="renovation_floor_price">alkaen 25 € / m²</span>
+        <span class="alv-text" data-i18n="price_vat">+ ALV 25,5%</span><br>
+        <small data-i18n="renovation_floor_note">Parketti, laminaatti, linoleumi, laatta</small>
+        <button class="open-modal-btn" data-modal="modal-lattiatyot" data-i18n="see_photos">📷 Katso kuvat</button>
       </div>
 
       <div id="seinienmaalaus-btn" class="service-card clickable">
-        🎨 <strong class="remontti-text">Seinien maalaus</strong><br>
-        <span class="price">alkaen 25 € / m²</span>
-        <span class="alv-text">+ ALV 25,5%</span>
-        <button class="open-modal-btn" data-modal="modal-seinienmaalaus">📷 Katso kuvat</button>
+        🎨 <strong class="remontti-text" data-i18n="renovation_paint_title">Seinien maalaus</strong><br>
+        <span class="price" data-i18n="renovation_paint_price">alkaen 25 € / m²</span>
+        <span class="alv-text" data-i18n="price_vat">+ ALV 25,5%</span>
+        <button class="open-modal-btn" data-modal="modal-seinienmaalaus" data-i18n="see_photos">📷 Katso kuvat</button>
       </div>
 
       <div id="keittiot-btn" class="service-card clickable">
-        🏠 <strong class="remontti-text">Keittiöiden ja kaappien asennus</strong><br>
-        <span class="price">alkaen 45 € / tunti</span>
-        <span class="alv-text">+ ALV 25,5%</span><br>
-        <small>Sisältää tarvittaessa sähkön ja putkiston siirrot</small>
-        <button class="open-modal-btn" data-modal="modal-keittiot">📷 Katso kuvat</button>
+        🏠 <strong class="remontti-text" data-i18n="renovation_kitchen_title">Keittiöiden ja kaappien asennus</strong><br>
+        <span class="price" data-i18n="renovation_kitchen_price">alkaen 45 € / tunti</span>
+        <span class="alv-text" data-i18n="price_vat">+ ALV 25,5%</span><br>
+        <small data-i18n="renovation_kitchen_note">Sisältää tarvittaessa sähkön ja putkiston siirrot</small>
+        <button class="open-modal-btn" data-modal="modal-keittiot" data-i18n="see_photos">📷 Katso kuvat</button>
       </div>
 
       <div id="tavaran-btn" class="service-card clickable">
-        🚚 <strong class="remontti-text">Tavaran toimitus kotiin</strong><br>
-        <span class="price">alkaen 50 €</span>
-        <span class="alv-text">+ ALV 25,5%</span>
-        <button class="open-modal-btn" data-modal="modal-tavaran">📷 Katso kuvat</button>
+        🚚 <strong class="remontti-text" data-i18n="renovation_delivery_title">Tavaran toimitus kotiin</strong><br>
+        <span class="price" data-i18n="renovation_delivery_price">alkaen 50 €</span>
+        <span class="alv-text" data-i18n="price_vat">+ ALV 25,5%</span>
+        <button class="open-modal-btn" data-modal="modal-tavaran" data-i18n="see_photos">📷 Katso kuvat</button>
       </div>
     </div>
 
-    <p class="service-note">
+    <p class="service-note" data-i18n="services_renovation_note">
       Huom: Hintoihin sisältyy minimaalisten materiaalien käyttö.
       Hinta voi muuttua riippuen toiveistanne ja lisäpalveluista.
     </p>
   </section>
 
   <!-- ================= MATKAKULUT ================= -->
-   <section class="service-wide">
-    <h2 id="matkakulut-btn" class="clickable">🚗 Matkakulut</h2>
-    <p class="matkakulut-text">→ Pääkaupunkiseudulla (Helsinki, Vantaa, Espoo) — <strong>15 € / matka</strong></p>
-    <p class="matkakulut-text">→ Kaikissa kohteissa pääkaupunkiseudun ulkopuolella 80 km säteellä Helsingistä — <strong>30 € / matka</strong></p>
+  <section class="service-wide">
+    <h2 id="matkakulut-btn" class="clickable" data-i18n="travel_costs_title">🚗 Matkakulut</h2>
+    <p class="matkakulut-text" data-i18n-html="travel_costs_local">→ Pääkaupunkiseudulla (Helsinki, Vantaa, Espoo) — <strong>15 € / matka</strong></p>
+    <p class="matkakulut-text" data-i18n-html="travel_costs_outer">→ Kaikissa kohteissa pääkaupunkiseudun ulkopuolella 80 km säteellä Helsingistä — <strong>30 € / matka</strong></p>
   </section>
 
   <!-- CTA Button -->
   <section class="section cta-section">
-    <a href="mailto:korikunto@gmail.com" class="btn-primary">📩 Pyydä tarjous</a>
+    <a href="mailto:korikunto@gmail.com" class="btn-primary" data-i18n="cta_quote">📩 Pyydä tarjous</a>
   </section>
 </div>
 
 <!-- ================= MIKSI VALITA & FAQ ================= -->
 <div class="bg-services-faq">
   <section class="section">
-    <h2>🌟 Miksi valita KoriKunto?</h2>
+    <h2 data-i18n="why_choose_title">🌟 Miksi valita KoriKunto?</h2>
     <ul class="check-list">
-      <li> Ammattitaitoinen ja luotettava tiimi</li>
-      <li> Laadukkaat ja ympäristöystävälliset puhdistusaineet</li>
-      <li> Nopea vasteaika tarjouspyynnöille</li>
-      <li> Selkeä hinnoittelu ilman piilokuluja</li>
-      <li> Yksilöllinen lähestymistapa jokaiseen kohteeseen</li>
+      <li data-i18n="why_choose_item_1"> Ammattitaitoinen ja luotettava tiimi</li>
+      <li data-i18n="why_choose_item_2"> Laadukkaat ja ympäristöystävälliset puhdistusaineet</li>
+      <li data-i18n="why_choose_item_3"> Nopea vasteaika tarjouspyynnöille</li>
+      <li data-i18n="why_choose_item_4"> Selkeä hinnoittelu ilman piilokuluja</li>
+      <li data-i18n="why_choose_item_5"> Yksilöllinen lähestymistapa jokaiseen kohteeseen</li>
     </ul>
   </section>
 
   <!-- FAQ -->
-  <div class="faq-item">
-    <h2>❓ Usein kysytyt kysymykset</h2>
+<div class="faq-item">
+    <h2 data-i18n="faq_title">❓ Usein kysytyt kysymykset</h2>
     <div class="faq-question">
-      <span class="faq-text">🧹 Sisältääkö hinta siivousvälineet?</span>
+      <span class="faq-text" data-i18n="faq_q1">🧹 Sisältääkö hinta siivousvälineet?</span>
       <span class="arrow">→</span>
-      <span class="faq-answer-inline">Kyllä, kaikki tarvittavat välineet ja puhdistusaineet sisältyvät hintaan.</span>
+      <span class="faq-answer-inline" data-i18n="faq_a1">Kyllä, kaikki tarvittavat välineet ja puhdistusaineet sisältyvät hintaan.</span>
     </div>
   </div>
 
   <div class="faq-item">
     <div class="faq-question">
-      <span class="faq-text">🚗 Mitä matkakulut maksavat?</span>
+      <span class="faq-text" data-i18n="faq_q2">🚗 Mitä matkakulut maksavat?</span>
       <span class="arrow">→</span>
-      <span class="faq-answer-inline">15 € päivässä pääkaupunkiseudulla (Helsinki, Espoo, Vantaa). Jos kohde on kauempana, matkakulut 30 €.</span>
+      <span class="faq-answer-inline" data-i18n="faq_a2">15 € päivässä pääkaupunkiseudulla (Helsinki, Espoo, Vantaa). Jos kohde on kauempana, matkakulut 30 €.</span>
     </div>
   </div>
 
   <div class="faq-item">
     <div class="faq-question">
-      <span class="faq-text">💰 Voinko saada kotitalousvähennystä?</span>
+      <span class="faq-text" data-i18n="faq_q3">💰 Voinko saada kotitalousvähennystä?</span>
       <span class="arrow">→</span>
-      <span class="faq-answer-inline">Kyllä, osa palvelun hinnasta voidaan vähentää kotitalousvähennyksenä jopa 60% (2250€ / vuosi per henkilö).</span>
+      <span class="faq-answer-inline" data-i18n="faq_a3">Kyllä, osa palvelun hinnasta voidaan vähentää kotitalousvähennyksenä jopa 60% (2250€ / vuosi per henkilö).</span>
     </div>
   </div>
 
   <div class="faq-item">
     <div class="faq-question">
-      <span class="faq-text">🕒 Kuinka nopeasti voitte aloittaa?</span>
+      <span class="faq-text" data-i18n="faq_q4">🕒 Kuinka nopeasti voitte aloittaa?</span>
       <span class="arrow">→</span>
-      <span class="faq-answer-inline">Yleensä pystymme aloittamaan 1–3 päivän sisällä varauksesta.</span>
+      <span class="faq-answer-inline" data-i18n="faq_a4">Yleensä pystymme aloittamaan 1–3 päivän sisällä varauksesta.</span>
     </div>
   </div>
 
   <div class="faq-item">
     <div class="faq-question">
-      <span class="faq-text">📆 Voinko sopia säännöllisen siivouksen?</span>
+      <span class="faq-text" data-i18n="faq_q5">📆 Voinko sopia säännöllisen siivouksen?</span>
       <span class="arrow">→</span>
-      <span class="faq-answer-inline">Kyllä, voimme sopia viikoittaisista tai kuukausittaisista siivouskerroista.</span>
+      <span class="faq-answer-inline" data-i18n="faq_a5">Kyllä, voimme sopia viikoittaisista tai kuukausittaisista siivouskerroista.</span>
     </div>
   </div>
 
   <div class="faq-item">
     <div class="faq-question">
-      <span class="faq-text">🏠 Palveletteko koko pääkaupunkiseutua?</span>
+      <span class="faq-text" data-i18n="faq_q6">🏠 Palveletteko koko pääkaupunkiseutua?</span>
       <span class="arrow">→</span>
-      <span class="faq-answer-inline">Kyllä, pääkaupunkiseudulla sekä noin 80 km säteellä Helsingistä.</span>
+      <span class="faq-answer-inline" data-i18n="faq_a6">Kyllä, pääkaupunkiseudulla sekä noin 80 km säteellä Helsingistä.</span>
     </div>
   </div>
 </div>
 
-<!-- ================= FOOTER ================= -->
+<!-- ===== FOOTER ===== -->
 <footer>
   <div class="container footer-container">
-    <div class="logo">KoriKunto Oy</div>
+    <div class="logo" data-i18n="footer_company">KoriKunto Oy</div>
     <div class="contact">
-      <div><i>📞</i> 040 867 6722</div>
-      <div><i>✉️</i> korikunto@gmail.com</div>
-      <div><i>🏢</i> Y-tunnus 3477450-6</div>
+      <div data-i18n="footer_phone"><i>📞</i> 040 867 6722</div>
+      <div data-i18n="footer_email"><i>✉️</i> korikunto@gmail.com</div>
+      <div data-i18n="footer_company_id"><i>🏢</i> Y-tunnus 3477450-6</div>
     </div>
   </div>
 </footer>
+  <script src="js/i18n.js"></script>
 
 <!-- ================= MODALS ================= -->
 <div id="modal-siivous" class="modal">
