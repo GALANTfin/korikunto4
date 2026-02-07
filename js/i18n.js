@@ -102,6 +102,8 @@ document.addEventListener("DOMContentLoaded", () => {
       contact_form_message_label: "Viesti",
       contact_form_message_placeholder: "Kuvaile tarpeesi",
       contact_form_submit: "Lähetä",
+      contact_form_status_sending: "Lähetetään...",
+      contact_form_toast_success: "Viesti lähetetty onnistuneesti. Otamme pian yhteyttä.",
       reviews_title: "Arvostelut ja palautet",
       review_1_text: "Siivous tehtiin huolellisesti ja ajallaan. Erittäin tyytyväinen lopputulokseen.",
       review_1_author: "Anna M.",
@@ -211,6 +213,8 @@ document.addEventListener("DOMContentLoaded", () => {
       contact_form_message_label: "Message",
       contact_form_message_placeholder: "Describe your needs",
       contact_form_submit: "Send",
+      contact_form_status_sending: "Sending...",
+      contact_form_toast_success: "Message sent successfully. We will contact you soon.",
       reviews_title: "Reviews and feedback",
       review_1_text: "The cleaning was done carefully and on time. Very satisfied with the result.",
       review_1_author: "Anna M.",
@@ -320,6 +324,8 @@ document.addEventListener("DOMContentLoaded", () => {
       contact_form_message_label: "Сообщение",
       contact_form_message_placeholder: "Опишите ваши потребности",
       contact_form_submit: "Отправить",
+      contact_form_status_sending: "Отправка...",
+      contact_form_toast_success: "Сообщение отправлено. Мы скоро с вами свяжемся.",
       reviews_title: "Отзывы и обратная связь",
       review_1_text: "Уборка выполнена тщательно и вовремя. Очень доволен результатом.",
       review_1_author: "Анна М.",
@@ -388,4 +394,88 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   applyLanguage(getStoredLanguage());
+
+  const getTranslation = (key) => {
+    const language = getStoredLanguage();
+    if (translations[language] && translations[language][key]) {
+      return translations[language][key];
+    }
+    if (translations.fi && translations.fi[key]) {
+      return translations.fi[key];
+    }
+    return "";
+  };
+
+  const contactForm = document.querySelector(".contact-form[data-form-endpoint]");
+  if (contactForm) {
+    const statusElement = contactForm.querySelector("[data-form-status]");
+    const submitButton = contactForm.querySelector("button[type=\"submit\"]");
+    const toastElement = document.querySelector("[data-toast]");
+    let toastTimeoutId = null;
+
+    const setStatus = (message, statusClass) => {
+      if (!statusElement) {
+        return;
+      }
+      statusElement.textContent = message;
+      statusElement.classList.remove("is-success", "is-error");
+      if (statusClass) {
+        statusElement.classList.add(statusClass);
+      }
+    };
+
+    const showToast = (message) => {
+      if (!toastElement) {
+        return;
+      }
+      toastElement.textContent = message;
+      toastElement.classList.add("is-visible");
+      if (toastTimeoutId) {
+        clearTimeout(toastTimeoutId);
+      }
+      toastTimeoutId = setTimeout(() => {
+        toastElement.classList.remove("is-visible");
+      }, 5000);
+    };
+
+    contactForm.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      const rawEndpoint = contactForm.dataset.formEndpoint;
+      const endpoint = rawEndpoint ? rawEndpoint.trim() : "";
+      if (!endpoint || endpoint.includes("your-id")) {
+        setStatus(getTranslation("contact_form_status_missing_endpoint"), "is-error");
+        return;
+      }
+
+      setStatus(getTranslation("contact_form_status_sending"));
+      if (submitButton) {
+        submitButton.disabled = true;
+      }
+
+      try {
+        const response = await fetch(endpoint, {
+          method: "POST",
+          headers: {
+            Accept: "application/json"
+          },
+          body: new FormData(contactForm)
+        });
+
+        if (response.ok) {
+          contactForm.reset();
+          setStatus(getTranslation("contact_form_status_success"), "is-success");
+          showToast(getTranslation("contact_form_toast_success"));
+        } else {
+          setStatus(getTranslation("contact_form_status_error"), "is-error");
+        }
+      } catch (error) {
+        setStatus(getTranslation("contact_form_status_error"), "is-error");
+      } finally {
+        if (submitButton) {
+          submitButton.disabled = false;
+        }
+      }
+    });
+  }
 });
