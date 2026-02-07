@@ -2127,3 +2127,12 @@ li span {
     text-align: left;
   }
 }
+
+
+body.contact-page {
+  background-image: url("../images/background6.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
