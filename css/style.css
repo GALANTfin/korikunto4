@@ -1700,6 +1700,42 @@ nav a::after {
   color: #6b7280;
 }
 
+.form-status {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #1a1a1a;
+}
+
+.form-status.is-success {
+  color: #15803d;
+}
+
+.form-status.is-error {
+  color: #b91c1c;
+}
+
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+  background: rgba(26, 79, 108, 0.95);
+  color: #ffffff;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.25);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 999;
+}
+
+.toast.is-visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-8px);
+}
+
 @media (max-width: 720px) {
   .nav-container {
     flex-direction: column;
@@ -1719,6 +1755,7 @@ nav a::after {
     width: 100%;
     text-align: center;
   }
+}
 
 /* секция — якорь */
 .section-intro-bg {
