@@ -29,6 +29,12 @@ document.addEventListener("DOMContentLoaded", () => {
       why_item_2: "✅Luotettava ja aikatauluja noudattava palvelu",
       why_item_3: "✅Selkeä hinnoittelu ilman piilokuluja",
       why_item_4: "✅Yksilöllinen lähestymistapa jokaiseen kohteeseen",
+      guarantees_heading: "Turvallisuus- ja laatutakuu",
+      guarantees_intro: "Toimimme läpinäkyvästi ja vastaamme tuloksesta jokaisessa kohteessa.",
+      guarantees_item_1: "✅Laadun tarkistus tarkistuslistan mukaan ennen luovutusta",
+      guarantees_item_2: "✅Sovimme työn laajuuden ja hinnan etukäteen",
+      guarantees_item_3: "✅Huolellinen suhtautuminen asiakkaan omaisuuteen",
+      guarantees_item_4: "✅Korjaamme mahdolliset huomautukset nopeasti",
       cta_heading: "Luotettava kumppani arjen ja remontin tarpeisiin",
       cta_text: "Olipa kyse säännöllisestä siivouksesta tai pienremontista, KORIKUNTO OY on turvallinen valinta. Palvelemme yksityisasiakkaita ja yrityksiä Espoossa, Helsingissä ja Vantaalla sekä noin 80 km säteellä Helsingistä. Tarjoamme joustavia aikatauluja, räätälöimme palvelut asiakkaan tarpeiden mukaan ja käytämme ympäristöystävällisiä työvälineitä. Kaikki työntekijämme ovat koulutettuja ja luotettavia, joten voit luottaa palveluumme.",
       cta_button: "Ota yhteyttä",
@@ -140,6 +146,12 @@ document.addEventListener("DOMContentLoaded", () => {
       why_item_2: "✅Reliable service that keeps schedules",
       why_item_3: "✅Clear pricing with no hidden fees",
       why_item_4: "✅Individual approach for every site",
+      guarantees_heading: "Safety and quality guarantees",
+      guarantees_intro: "We work transparently and take responsibility for the result at every site.",
+      guarantees_item_1: "✅Quality check using a checklist before handover",
+      guarantees_item_2: "✅We agree on the scope of work and price in advance",
+      guarantees_item_3: "✅Careful handling of the client's property",
+      guarantees_item_4: "✅We quickly fix any remarks if they arise",
       cta_heading: "A reliable partner for everyday and renovation needs",
       cta_text: "Whether it's regular cleaning or a small renovation, KORIKUNTO OY is a safe choice. We serve private and business customers in Espoo, Helsinki, and Vantaa as well as within about 80 km of Helsinki. We offer flexible schedules, tailor services to your needs, and use eco-friendly equipment. All our employees are trained and trustworthy, so you can rely on our service.",
       cta_button: "Contact us",
@@ -251,6 +263,12 @@ document.addEventListener("DOMContentLoaded", () => {
       why_item_2: "✅Надежный сервис и соблюдение сроков",
       why_item_3: "✅Прозрачные цены без скрытых платежей",
       why_item_4: "✅Индивидуальный подход к каждому объекту",
+      guarantees_heading: "Гарантии безопасности и качества",
+      guarantees_intro: "Мы работаем прозрачно и отвечаем за результат на каждом объекте.",
+      guarantees_item_1: "✅Проверка качества по чек-листу перед сдачей",
+      guarantees_item_2: "✅Фиксируем объем работ и стоимость до начала",
+      guarantees_item_3: "✅Аккуратное отношение к имуществу клиента",
+      guarantees_item_4: "✅Быстро исправляем замечания, если они возникли",
       cta_heading: "Надежный партнер для повседневных и ремонтных задач",
       cta_text: "Будь то регулярная уборка или небольшой ремонт, KORIKUNTO OY — надежный выбор. Мы работаем с частными и корпоративными клиентами в Эспоо, Хельсинки и Вантаа, а также в радиусе около 80 км от Хельсинки. Предлагаем гибкие графики, подбираем услуги под ваши потребности и используем экологичные инструменты. Все наши сотрудники обучены и заслуживают доверия.",
       cta_button: "Связаться",
@@ -479,4 +497,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
 
