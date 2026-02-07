@@ -1,5 +1,34 @@
 document.addEventListener("DOMContentLoaded", function() {
   const buttons = document.querySelectorAll(".open-modal-btn");
+  const preloadImages = (sources) => {
+    sources.forEach((src) => {
+      const image = new Image();
+      image.src = src;
+    });
+  };
+
+  const backgroundSources = (document.body.dataset.preloadImages || "")
+    .split(",")
+    .map((src) => src.trim())
+    .filter(Boolean);
+
+  if (backgroundSources.length > 0) {
+    preloadImages(backgroundSources);
+  }
+
+  const preloadModalImages = () => {
+    const sources = Array.from(document.querySelectorAll(".modal img"))
+      .map((img) => img.getAttribute("src"))
+      .filter(Boolean);
+
+    preloadImages(sources);
+  };
+
+  if ("requestIdleCallback" in window) {
+    window.requestIdleCallback(preloadModalImages, { timeout: 2000 });
+  } else {
+    window.setTimeout(preloadModalImages, 1000);
+  }
 
   buttons.forEach(btn => {
     const modalId = btn.getAttribute("data-modal");
