@@ -2045,14 +2045,6 @@ nav a::after {
   display: block;
 }
 
-@media (max-width: 768px) {
-  .modal-content--image {
-    width: calc(100% - 32px);
-    height: calc(100% - 32px);
-    padding: 16px;
-  }
-}
-
 :root {
   --bg-dark: #0f1115;
   --bg-card: #1a1d23;
