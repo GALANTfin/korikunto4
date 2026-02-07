@@ -1838,7 +1838,7 @@ nav a::after {
 }
 
 .bg-services-faq {
-  background-image: url("../images/background6.jpeg");
+  background-image: url("../images/background7.jpeg");
 }
 
 @media (max-width: 768px) {
@@ -2135,4 +2135,93 @@ body.contact-page {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+/* ===== Typography + readability overrides ===== */
+:root {
+  --font-base: "Inter", "Lato", "Arial", sans-serif;
+  --font-heading: "Montserrat", "Roboto Slab", "Georgia", serif;
+  --color-text: #1f2933;
+  --color-muted: #52606d;
+  --color-on-dark: #f8fafc;
+  --color-on-dark-muted: #d9e2ec;
+  --color-accent: #2f80ed;
+}
+
+body {
+  font-family: var(--font-base);
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.main-heading,
+.title-strong,
+.section-title,
+.section-title-center {
+  font-family: var(--font-heading);
+  letter-spacing: 0.2px;
+  color: inherit;
+}
+
+p,
+li {
+  color: inherit;
+}
+
+.small,
+.small-text,
+.alv-text,
+.service-note {
+  color: var(--color-muted);
+}
+
+a {
+  color: var(--color-accent);
+}
+
+a:hover {
+  color: #1c5fd4;
+}
+
+.section-intro-bg,
+.section-services-bg,
+.section-cta,
+.bg-services-cleaning,
+.bg-services-renovation,
+.bg-services-faq {
+  color: var(--color-on-dark);
+}
+
+.section-intro-bg .main-text,
+.section-services-bg .main-text,
+.section-cta .main-text,
+.section-intro-bg .check-list li,
+.section-services-bg .check-list li,
+.section-cta .check-list li,
+.bg-services-cleaning .check-list li,
+.bg-services-renovation .check-list li,
+.bg-services-faq .check-list li,
+.bg-services-cleaning .service-note,
+.bg-services-renovation .service-note,
+.bg-services-faq .service-note,
+.bg-services-cleaning .alv-text,
+.bg-services-renovation .alv-text,
+.bg-services-faq .alv-text {
+  color: var(--color-on-dark-muted);
+}
+
+.section-intro-bg a,
+.section-services-bg a,
+.section-cta a,
+.bg-services-cleaning a,
+.bg-services-renovation a,
+.bg-services-faq a {
+  color: #b9d8ff;
 }
