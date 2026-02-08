@@ -110,6 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
       contact_form_status_sending: "Lähetetään...",
       contact_form_toast_success: "Viesti lähetetty onnistuneesti. Otamme pian yhteyttä.",
       reviews_title: "Arvostelut ja palautet",
+      reviews_view_all: "Katso kaikki arvostelut",
       review_1_text: "Nopea toteutus ja kaikki meni niinkuin sovittiin.",
       review_1_author: "Minna, Helsinki",
       review_2_text: "<strong>Kylpyhuoneen sähkövalopeilin asennus (07.01.2026)</strong><br>Hyvä hinta-laatusuhde. Erinomainen viestintä. Homma sujui nopeasti ja hyvin.",
@@ -120,6 +121,14 @@ document.addEventListener("DOMContentLoaded", () => {
       review_4_author: "Helsinki",
       review_5_text: "<strong>Sisäoven lukitus (04.02.2026)</strong><br>Työ valmistui sovitusti. Kiitos ja suosittelut.",
       review_5_author: "Helsinki",
+      review_6_text: "<strong>Keittiökalusteiden purku ja uusien runkojen asennus sekä työtason sovitus (12.02.2026)</strong><br>Työ oli laaja, mutta aikataulu piti ja lopputulos on siisti ja tarkka.",
+      review_6_author: "Espoo",
+      review_7_text: "<strong>Saunan lauteiden uusiminen, paneloinnin korjaus ja LED-valaistuksen asennus (18.02.2026)</strong><br>Hyvä suunnittelu ja huolellinen toteutus. Sauna näyttää ja tuntuu kuin uudelta.",
+      review_7_author: "Vantaa",
+      review_8_text: "<strong>Parketin paikallinen korjaus, listoitus ja kynnyksen vaihto (22.02.2026)</strong><br>Pieniä yksityiskohtia paljon, mutta kaikki saatiin nätisti kohdilleen.",
+      review_8_author: "Kirkkonummi",
+      review_9_text: "<strong>Kylpyhuoneen silikonisaumojen uusinta, kaapin kiinnitys ja ilmanvaihdon säätö (26.02.2026)</strong><br>Kaikki tehtiin huolellisesti ja jätettiin siististi. Nopea reagointi yhteydenottoon.",
+      review_9_author: "Kauniainen",
       location_title: "Sijaintimme"
     },
     en: {
@@ -233,6 +242,7 @@ document.addEventListener("DOMContentLoaded", () => {
       contact_form_status_sending: "Sending...",
       contact_form_toast_success: "Message sent successfully. We will contact you soon.",
       reviews_title: "Reviews and feedback",
+      reviews_view_all: "View all reviews",
       review_1_text: "Quick execution and everything went as agreed.",
       review_1_author: "Minna, Helsinki",
       review_2_text: "<strong>Installation of a bathroom LED mirror (07.01.2026)</strong><br>Great value for money. Excellent communication. The job went quickly and smoothly.",
@@ -243,6 +253,14 @@ document.addEventListener("DOMContentLoaded", () => {
       review_4_author: "Helsinki",
       review_5_text: "<strong>Interior door lock (04.02.2026)</strong><br>The job was completed as agreed. Thank you and recommendations.",
       review_5_author: "Helsinki",
+      review_6_text: "<strong>Kitchen unit removal, new cabinet frame installation and countertop fitting (12.02.2026)</strong><br>A big job, but the schedule held and the finish is clean and precise.",
+      review_6_author: "Espoo",
+      review_7_text: "<strong>Sauna bench renewal, paneling repair and LED lighting installation (18.02.2026)</strong><br>Great planning and careful execution. The sauna looks and feels like new.",
+      review_7_author: "Vantaa",
+      review_8_text: "<strong>Local parquet repair, skirting installation and threshold replacement (22.02.2026)</strong><br>Lots of small details, but everything was aligned nicely.",
+      review_8_author: "Kirkkonummi",
+      review_9_text: "<strong>Bathroom silicone joint replacement, cabinet mounting and ventilation adjustment (26.02.2026)</strong><br>Everything was done carefully and left tidy. Quick response to the inquiry.",
+      review_9_author: "Kauniainen",
       location_title: "Our location"
     },
     ru: {
@@ -356,6 +374,7 @@ document.addEventListener("DOMContentLoaded", () => {
       contact_form_status_sending: "Отправка...",
       contact_form_toast_success: "Сообщение отправлено. Мы скоро с вами свяжемся.",
       reviews_title: "Отзывы и обратная связь",
+      reviews_view_all: "Смотреть все отзывы",
       review_1_text: "Быстрое выполнение, и всё прошло как договаривались.",
       review_1_author: "Минна, Хельсинки",
       review_2_text: "<strong>Установка электрического зеркала с подсветкой в ванной (07.01.2026)</strong><br>Отличное соотношение цены и качества. Прекрасная коммуникация. Работа прошла быстро и хорошо.",
@@ -366,6 +385,14 @@ document.addEventListener("DOMContentLoaded", () => {
       review_4_author: "Хельсинки",
       review_5_text: "<strong>Замок межкомнатной двери (04.02.2026)</strong><br>Работа выполнена как договаривались. Спасибо и рекомендации.",
       review_5_author: "Хельсинки",
+      review_6_text: "<strong>Демонтаж кухонных модулей, установка новых каркасов и подгонка столешницы (12.02.2026)</strong><br>Объёмная работа, но сроки выдержали, результат аккуратный и точный.",
+      review_6_author: "Эспоо",
+      review_7_text: "<strong>Обновление полков в сауне, ремонт панелей и монтаж LED-подсветки (18.02.2026)</strong><br>Отличное планирование и аккуратное исполнение. Сауна как новая.",
+      review_7_author: "Вантаа",
+      review_8_text: "<strong>Локальный ремонт паркета, установка плинтусов и замена порога (22.02.2026)</strong><br>Много мелких нюансов, но всё сделали ровно и красиво.",
+      review_8_author: "Киркконумми",
+      review_9_text: "<strong>Замена силиконовых швов в ванной, крепление шкафа и регулировка вентиляции (26.02.2026)</strong><br>Сделали аккуратно и оставили всё чистым. Быстро отреагировали на обращение.",
+      review_9_author: "Кауниайнен",
       location_title: "Наше расположение"
     }
   };
