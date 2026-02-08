@@ -638,9 +638,10 @@ h2 {
 
 .reviews-button {
   margin-top: 0;
+  min-width: 260px;
+  padding: 12px 28px;
+  justify-content: center;
 }
-
-
 /* ===== Один отзыв ===== */
 .review-block {
   width: 43%;
@@ -712,6 +713,9 @@ h2 {
 
 .reviews-container--modal .review-block {
   width: calc(50% - 10px);
+  background-color: #f8f9fb;
+  border: 1px solid #e3e6eb;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
 }
 
 @media (max-width: 768px) {
