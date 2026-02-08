@@ -47,8 +47,8 @@ document.addEventListener("DOMContentLoaded", function() {
       document.body.style.overflow = "auto";
     });
 
-    window.addEventListener("click", (e) => {
-      if (e.target === modal) {
+modal.addEventListener("click", (e) => {
+      if (!modal.querySelector(".modal-content").contains(e.target)) {
         modal.style.display = "none";
         modal.setAttribute("hidden", "");
         document.body.style.overflow = "auto";
