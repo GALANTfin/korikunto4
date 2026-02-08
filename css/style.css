@@ -630,6 +630,17 @@ h2 {
   flex-wrap: wrap; /* на мобильных блоки станут вертикально */
 }
 
+.reviews-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 10% 0;
+}
+
+.reviews-button {
+  margin-top: 0;
+}
+
+
 /* ===== Один отзыв ===== */
 .review-block {
   width: 43%;
@@ -667,6 +678,12 @@ h2 {
     gap: 20px;
   }
 
+    .reviews-actions {
+    justify-content: center;
+    margin: 10px 5% 0;
+  }
+
+
   .review-block {
     width: 100%;
   }
@@ -677,6 +694,29 @@ h2 {
 
   .review-stars {
     font-size: 18px;
+  }
+}
+
+.modal-content--reviews {
+  width: min(1100px, 92vw);
+  max-height: 80vh;
+  overflow-y: auto;
+  display: block;
+  text-align: left;
+}
+
+.reviews-container--modal {
+  margin: 0;
+  gap: 20px;
+}
+
+.reviews-container--modal .review-block {
+  width: calc(50% - 10px);
+}
+
+@media (max-width: 768px) {
+  .reviews-container--modal .review-block {
+    width: 100%;
   }
 }
 
