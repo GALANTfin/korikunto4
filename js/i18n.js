@@ -70,7 +70,6 @@ document.addEventListener("DOMContentLoaded", () => {
       travel_costs_local: "→ Pääkaupunkiseudulla (Helsinki, Vantaa, Espoo) — <strong>15 € / matka</strong>",
       travel_costs_outer: "→ Kaikissa kohteissa pääkaupunkiseudun ulkopuolella 80 km säteellä Helsingistä — <strong>30 € / matka</strong>",
       cta_quote: "📩 Pyydä tarjous",
-      why_choose_title: "🌟 Miksi valita KoriKunto?",
       why_choose_item_1: "✅Ammattitaitoinen ja luotettava tiimi",
       why_choose_item_2: "✅Laadukkaat ja ympäristöystävälliset puhdistusaineet",
       why_choose_item_3: "✅Nopea vasteaika tarjouspyynnöille",
@@ -106,15 +105,21 @@ document.addEventListener("DOMContentLoaded", () => {
       contact_form_service_renovation: "Remontti / asennus",
       contact_form_service_other: "Muu",
       contact_form_message_label: "Viesti",
-      contact_form_message_placeholder: "Kuvaile tarpeesi",
+            contact_form_message_placeholder: "Kuvaile tarpeesi",
       contact_form_submit: "Lähetä",
       contact_form_status_sending: "Lähetetään...",
       contact_form_toast_success: "Viesti lähetetty onnistuneesti. Otamme pian yhteyttä.",
       reviews_title: "Arvostelut ja palautet",
-      review_1_text: "Siivous tehtiin huolellisesti ja ajallaan. Erittäin tyytyväinen lopputulokseen.",
-      review_1_author: "Anna M.",
-      review_2_text: "Keittiöiden kokoaminen suoritettiin nopeasti ja tarkasti. Lopputulos vastasi täysin odotuksia.",
-      review_2_author: "Jukka L.",
+      review_1_text: "Nopea toteutus ja kaikki meni niinkuin sovittiin.",
+      review_1_author: "Minna, Helsinki",
+      review_2_text: "<strong>Kylpyhuoneen sähkövalopeilin asennus (07.01.2026)</strong><br>Hyvä hinta-laatusuhde. Erinomainen viestintä. Homma sujui nopeasti ja hyvin.",
+      review_2_author: "Helsinki",
+      review_3_text: "<strong>Keittiössä yhden oven sarananoiden kiinnitys (28.01.2026)</strong><br>Työ tuli sujuvasti valmiiksi, vaikka oli vähän työläs. Voin suositella heitä remonttimiehiksi.",
+      review_3_author: "Pornainen",
+      review_4_text: "<strong>Hattuhyllyn, kahden yksittäisen hyllyn (Jysk: Hejlsminde) ja peilin (Ikea: Frebro) poraus eteisen kiviseinään (27.01.2026)</strong><br>Erinomaista viestintää, hyvää työnjälkeä ja plussaa vielä erittäin nopeasta aikataulusta.",
+      review_4_author: "Helsinki",
+      review_5_text: "<strong>Sisäoven lukitus (04.02.2026)</strong><br>Työ valmistui sovitusti. Kiitos ja suosittelut.",
+      review_5_author: "Helsinki",
       location_title: "Sijaintimme"
     },
     en: {
@@ -228,10 +233,16 @@ document.addEventListener("DOMContentLoaded", () => {
       contact_form_status_sending: "Sending...",
       contact_form_toast_success: "Message sent successfully. We will contact you soon.",
       reviews_title: "Reviews and feedback",
-      review_1_text: "The cleaning was done carefully and on time. Very satisfied with the result.",
-      review_1_author: "Anna M.",
-      review_2_text: "Kitchen assembly was completed quickly and accurately. The result fully met expectations.",
-      review_2_author: "Jukka L.",
+      review_1_text: "Quick execution and everything went as agreed.",
+      review_1_author: "Minna, Helsinki",
+      review_2_text: "<strong>Installation of a bathroom LED mirror (07.01.2026)</strong><br>Great value for money. Excellent communication. The job went quickly and smoothly.",
+      review_2_author: "Helsinki",
+      review_3_text: "<strong>Fixing hinges for one kitchen door (28.01.2026)</strong><br>The work was completed smoothly, even though it was a bit tricky. I can recommend them as renovation professionals.",
+      review_3_author: "Pornainen",
+      review_4_text: "<strong>Installing a coat rack, two single shelves (Jysk: Hejlsminde) and a mirror (Ikea: Frebro) into a stone hallway wall (27.01.2026)</strong><br>Excellent communication, good workmanship, and extra points for a very fast schedule.",
+      review_4_author: "Helsinki",
+      review_5_text: "<strong>Interior door lock (04.02.2026)</strong><br>The job was completed as agreed. Thank you and recommendations.",
+      review_5_author: "Helsinki",
       location_title: "Our location"
     },
     ru: {
@@ -345,10 +356,16 @@ document.addEventListener("DOMContentLoaded", () => {
       contact_form_status_sending: "Отправка...",
       contact_form_toast_success: "Сообщение отправлено. Мы скоро с вами свяжемся.",
       reviews_title: "Отзывы и обратная связь",
-      review_1_text: "Уборка выполнена тщательно и вовремя. Очень доволен результатом.",
-      review_1_author: "Анна М.",
-      review_2_text: "Сборка кухни выполнена быстро и точно. Результат полностью оправдал ожидания.",
-      review_2_author: "Юкка Л.",
+      review_1_text: "Быстрое выполнение, и всё прошло как договаривались.",
+      review_1_author: "Минна, Хельсинки",
+      review_2_text: "<strong>Установка электрического зеркала с подсветкой в ванной (07.01.2026)</strong><br>Отличное соотношение цены и качества. Прекрасная коммуникация. Работа прошла быстро и хорошо.",
+      review_2_author: "Хельсинки",
+      review_3_text: "<strong>Крепление петель на одной кухонной двери (28.01.2026)</strong><br>Работа была выполнена гладко, хотя была немного сложной. Могу рекомендовать их как ремонтников.",
+      review_3_author: "Порнайнен",
+      review_4_text: "<strong>Установка в прихожей на каменную стену вешалки для одежды, двух отдельных полок (Jysk: Hejlsminde) и зеркала (Ikea: Frebro) (27.01.2026)</strong><br>Отличная коммуникация, хорошее качество работы и плюс за очень быстрые сроки.",
+      review_4_author: "Хельсинки",
+      review_5_text: "<strong>Замок межкомнатной двери (04.02.2026)</strong><br>Работа выполнена как договаривались. Спасибо и рекомендации.",
+      review_5_author: "Хельсинки",
       location_title: "Наше расположение"
     }
   };
@@ -463,6 +480,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const endpoint = rawEndpoint ? rawEndpoint.trim() : "";
       if (!endpoint || endpoint.includes("your-id")) {
         setStatus(getTranslation("contact_form_status_missing_endpoint"), "is-error");
+        showToast(getTranslation("contact_form_toast_missing_endpoint"));
         return;
       }
 
@@ -486,9 +504,11 @@ document.addEventListener("DOMContentLoaded", () => {
           showToast(getTranslation("contact_form_toast_success"));
         } else {
           setStatus(getTranslation("contact_form_status_error"), "is-error");
+          showToast(getTranslation("contact_form_toast_error"));
         }
       } catch (error) {
         setStatus(getTranslation("contact_form_status_error"), "is-error");
+        showToast(getTranslation("contact_form_toast_error"));
       } finally {
         if (submitButton) {
           submitButton.disabled = false;
@@ -497,5 +517,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
-
-
