@@ -716,7 +716,7 @@ h2 {
   width: calc(50% - 10px);
   background-color: #f8f9fb;
   border: 1px solid #e3e6eb;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+  box-shadow: 0 12px 22px rgba(0,0,0,0.08);
 }
 
 @media (max-width: 768px) {
@@ -2304,6 +2304,27 @@ a:hover {
 .bg-services-renovation a,
 .bg-services-faq a {
   color: #b9d8ff;
+}
+
+.reviews-actions {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 10px auto 0;
+}
+
+.reviews-button {
+  margin-top: 0;
+  min-width: 260px;
+  padding: 12px 28px;
+  justify-content: center;
+}
+
+.reviews-container--modal .review-block {
+  width: calc(50% - 10px);
+  background-color: #f8f9fb;
+  border: 1px solid #e3e6eb;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
 }
 
 
