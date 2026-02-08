@@ -95,7 +95,7 @@
 </section>
 
 
-<section class="section">
+<section class="section" id="reviews">
   <h2 class="section-title-center" data-i18n="reviews_title">Arvostelut ja palautet</h2>
 
   <div class="reviews-container">
@@ -127,13 +127,10 @@
       <p class="review-author" data-i18n="review_4_author">Helsinki</p>
     </div>
 
-    <!-- Viides отзыв -->
-    <div class="review-block">
-      <p class="review-stars">⭐⭐⭐⭐⭐</p>
-      <p class="review-text" data-i18n-html="review_5_text"><strong>Sisäoven lukitus (04.02.2026)</strong><br>Työ valmistui sovitusti. Kiitos ja suosittelut.</p>
-      <p class="review-author" data-i18n="review_5_author">Helsinki</p>
-    </div>
-  </div>
+    <div>
+        <div class="reviews-actions">
+    <button class="open-modal-btn reviews-button" type="button" data-modal="modal-reviews" data-i18n="reviews_view_all">Katso kaikki arvostellut</button>
+    </div> 
 </section>
 
 <!-- ===== MAP ===== -->
@@ -168,6 +165,79 @@
   </div>
 </footer>
   <script src="js/i18n.js"></script>
+
+  <!-- ================= REVIEWS MODAL ================= -->
+<div id="modal-reviews" class="modal" hidden>
+  <div class="modal-content modal-content--reviews">
+    <span class="close">&times;</span>
+    <div class="reviews-container reviews-container--modal">
+      <!-- Ensimmäinen отзыв -->
+      <div class="review-block">
+        <p class="review-stars">⭐⭐⭐⭐⭐</p>
+        <p class="review-text" data-i18n="review_1_text">Nopea toteutus ja kaikki meni niinkuin sovittiin.</p>
+        <p class="review-author" data-i18n="review_1_author">Minna, Helsinki</p>
+      </div>
+
+      <!-- Toinen отзыв -->
+      <div class="review-block">
+        <p class="review-stars">⭐⭐⭐⭐⭐</p>
+        <p class="review-text" data-i18n-html="review_2_text"><strong>Kylpyhuoneen sähkövalopeilin asennus (07.01.2026)</strong><br>Hyvä hinta-laatusuhde. Erinomainen viestintä. Homma sujui nopeasti ja hyvin.</p>
+        <p class="review-author" data-i18n="review_2_author">Helsinki</p>
+      </div>
+
+      <!-- Kolmas отзыв -->
+      <div class="review-block">
+        <p class="review-stars">⭐⭐⭐⭐☆</p>
+        <p class="review-text" data-i18n-html="review_3_text"><strong>Keittiössä yhden oven sarananoiden kiinnitys (28.01.2026)</strong><br>Työ tuli sujuvasti valmiiksi, vaikka oli vähän työläs. Voin suositella heitä remonttimiehiksi.</p>
+        <p class="review-author" data-i18n="review_3_author">Pornainen</p>
+      </div>
+
+      <!-- Neljäs отзыв -->
+      <div class="review-block">
+        <p class="review-stars">⭐⭐⭐⭐⭐</p>
+        <p class="review-text" data-i18n-html="review_4_text"><strong>Hattuhyllyn, kahden yksittäisen hyllyn (Jysk: Hejlsminde) ja peilin (Ikea: Frebro) poraus eteisen kiviseinään (27.01.2026)</strong><br>Erinomaista viestintää, hyvää työnjälkeä ja plussaa vielä erittäin nopeasta aikataulusta.</p>
+        <p class="review-author" data-i18n="review_4_author">Helsinki</p>
+      </div>
+
+      <!-- Viides отзыв -->
+      <div class="review-block">
+        <p class="review-stars">⭐⭐⭐⭐⭐</p>
+        <p class="review-text" data-i18n-html="review_5_text"><strong>Sisäoven lukitus (04.02.2026)</strong><br>Työ valmistui sovitusti. Kiitos ja suosittelut.</p>
+        <p class="review-author" data-i18n="review_5_author">Helsinki</p>
+      </div>
+
+      <!-- Kuudes отзыв -->
+      <div class="review-block">
+        <p class="review-stars">⭐⭐⭐⭐⭐</p>
+        <p class="review-text" data-i18n-html="review_6_text"><strong>Keittiökalusteiden purku ja uusien runkojen asennus sekä työtason sovitus (12.02.2026)</strong><br>Työ oli laaja, mutta aikataulu piti ja lopputulos on siisti ja tarkka.</p>
+        <p class="review-author" data-i18n="review_6_author">Espoo</p>
+      </div>
+
+      <!-- Seitsemäs отзыв -->
+      <div class="review-block">
+        <p class="review-stars">⭐⭐⭐⭐⭐</p>
+        <p class="review-text" data-i18n-html="review_7_text"><strong>Saunan lauteiden uusiminen, paneloinnin korjaus ja LED-valaistuksen asennus (18.02.2026)</strong><br>Hyvä suunnittelu ja huolellinen toteutus. Sauna näyttää ja tuntuu kuin uudelta.</p>
+        <p class="review-author" data-i18n="review_7_author">Vantaa</p>
+      </div>
+
+      <!-- Kahdeksas отзыв -->
+      <div class="review-block">
+        <p class="review-stars">⭐⭐⭐⭐☆</p>
+        <p class="review-text" data-i18n-html="review_8_text"><strong>Parketin paikallinen korjaus, listoitus ja kynnyksen vaihto (22.02.2026)</strong><br>Pieniä yksityiskohtia paljon, mutta kaikki saatiin nätisti kohdilleen.</p>
+        <p class="review-author" data-i18n="review_8_author">Kirkkonummi</p>
+      </div>
+
+      <!-- Yhdeksäs отзыв -->
+      <div class="review-block">
+        <p class="review-stars">⭐⭐⭐⭐⭐</p>
+        <p class="review-text" data-i18n-html="review_9_text"><strong>Kylpyhuoneen silikonisaumojen uusinta, kaapin kiinnitys ja ilmanvaihdon säätö (26.02.2026)</strong><br>Kaikki tehtiin huolellisesti ja jätettiin siististi. Nopea reagointi yhteydenottoon.</p>
+        <p class="review-author" data-i18n="review_9_author">Kauniainen</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>
